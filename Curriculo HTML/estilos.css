@@ -1,0 +1,177 @@
+/* Estilos básicos de reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #333;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #a38350;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #333;
+}
+
+/* Jumbotron/Header */
+.jumbotron {
+    background-color: #fff;
+    color: #333;
+    padding: 4rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.jumbotron h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+/* Seções de Conteúdo */
+section {
+    padding: 3rem 0;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+p, li {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Cards de Certificações */
+.card {
+    border: 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #333;
+}
+
+.card .card-text {
+    color: #555;
+}
+
+/* Modal de Certificado */
+.modal-content {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.modal-title {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Botão Voltar ao Topo */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a38350;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    display: none;
+    transition: background-color 0.3s;
+}
+
+#scrollToTop:hover {
+    background-color: #333;
+}
+
+/* Ajuste em títulos e listas */
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #333;
+}
+
+ul.list-group li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 1em;
+    }
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+}
+/* Espaçamento ajustado para o título principal */
+header.jumbotron {
+    padding-top: 6rem; /* Ajuste conforme necessário */
+    padding-bottom: 2rem;
+}
+
+/* Para cada seção que a navbar aponta */
+section {
+    scroll-margin-top: 6rem; /* Espaçamento para o scroll parar antes da navbar */
+}
